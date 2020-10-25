@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <!-- Meta data and imports -->
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,21 +9,22 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
+
 <body>
     <header>
-      <!-- Navigation bar -->
+        <!-- Navigation bar -->
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-page="/Index">Peter Keenan</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="nav justify-content-end">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Blog">Blog</a>
-                            </li>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Music">Music</a>
                         </li>
@@ -44,8 +46,13 @@
     <!-- Footer -->
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2020 Peter Keenan
+            <ul class="list-unstyled">
+                <li><a href="https://linuxrocks.online/@@keenan"><img src="lib/static/Logotype (Simple).svg" width="20"></a></li>
+                <li><a href="https://github.com/galambborong"><img src="lib/static/GitHub-Mark-120px-plus.png" width="20"></a></li>
+                <li><a href="https://www.linkedin.com/in/peter-keenan-bb951a46"><img src="lib/static/LI-In-Bug.png" width="20"></a></li>
+            </ul>
             <!-- <a asp-area="" asp-page="/Privacy">Privacy</a> -->
+            <p>&copy; 2020 Peter Keenan</p>1
         </div>
     </footer>
 
@@ -56,4 +63,5 @@
 
     @RenderSection("Scripts", required: false)
 </body>
+
 </html>
