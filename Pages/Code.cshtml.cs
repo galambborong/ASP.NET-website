@@ -7,10 +7,10 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace PeterKeenan.Pages
 {
-    public class CodingModel : PageModel
+  public class CodeModel : PageModel
+  {
+    public void OnGet()
     {
-        public void OnGet()
-        {
-        }
     }
+  }
 }
