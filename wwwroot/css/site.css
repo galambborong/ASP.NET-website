@@ -1,13 +1,44 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+@import 'https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,700;1,400&display=swap';
+
+
 a.navbar-brand {
   white-space: normal;
   text-align: center;
   word-break: break-all;
-  font-family: 'Alegreya Sans Bold', sans-serif;
-  font-size: 24px;
+  font-family: 'Alegreya Sans';
+  font-style: normal;
+  font-display: swap;
+  font-size: 36px;
+  font-weight: 700;
+  /* src: local('Alegreya Sans Bold'), local('AlegreyaSans-Bold'), url(https://fonts.gstatic.com/s/alegreyasans/v13/5aUu9_-1phKLFgshYDvh6Vwt5eFIqEp2iw.woff2) format('woff2'); */
 }
+
+
+h1,h2,h3 {
+  font-family: 'Alegreya Sans';
+  font-style: normal;
+}
+
+/* h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+ */
+
+
 
 /* Provide sufficient contrast against white background */
 a {
@@ -23,6 +54,7 @@ a {
 
 .nav-link {
   font-family: 'Alegreya Sans', sans-serif;
+  font-size: 24px;
 }
 
 
@@ -69,7 +101,14 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  font-family: 'Alegreya Sans'
 }
+
+p {
+  font-size: 18px;
+}
+
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -79,4 +118,3 @@ body {
 }
 
 
-@import 'https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,700;1,400&display=swap';
