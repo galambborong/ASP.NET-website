@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using PeterKeenan.Services;
 
 namespace PeterKeenan
 {
@@ -22,6 +23,7 @@ namespace PeterKeenan
     public void ConfigureServices(IServiceCollection services)
     {
       services.AddRazorPages();
+      services.AddTransient<JsonFileResearchPaperServices>();
     }
     // This method gets called by the runtime. Use this method toconfigurethe HTTP request pipeline.
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
