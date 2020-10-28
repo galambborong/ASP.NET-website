@@ -13,32 +13,33 @@ namespace PeterKeenan.Pages
     public class MusicModel : PageModel
     {
         private readonly ILogger<MusicModel> _logger;
-        public JsonFileResearchPaperServices ResearchPaperServices;
+        private readonly JsonFileResearchPaperServices _researchPaperServices;
         public IEnumerable<ResearchPapers> ResearchPapers { get; private set; }
 
-        public JsonFileRelatedPaperService RelatedPaperService;
+        private readonly JsonFileRelatedPaperService _relatedPaperService;
         public IEnumerable<RelatedPapers> RelatedPapers { get; private set; }
 
-        public JsonFileEngravingService EngravingService { get; private set; }
+        private readonly JsonFileEngravingService _engravingService;
         public IEnumerable<EngravingWork> EngravingWork { get; private set; }
 
         public MusicModel(
-            ILogger<MusicModel> logger, JsonFileResearchPaperServices researchService,
-            JsonFileRelatedPaperService relatedPaperService,
-            JsonFileEngravingService engravingService
+            ILogger<MusicModel> logger, 
+            JsonFileResearchPaperServices researchService
+        //     JsonFileRelatedPaperService relatedPaperService,
+        //     JsonFileEngravingService engravingService
         )
         {
             _logger = logger;
-            ResearchPaperServices = researchService;
-            RelatedPaperService = relatedPaperService;
-            EngravingService = engravingService;
+            _researchPaperServices = researchService;
+            // _relatedPaperService = relatedPaperService;
+            // _engravingService = engravingService;
         }
 
         public void OnGet()
         {
-            ResearchPapers = ResearchPaperServices.GetResearchPapers();
-            RelatedPapers = RelatedPaperService.GetRelatedPapers();
-            EngravingWork = EngravingService.GetEngravingWork();
+            ResearchPapers = _researchPaperServices.GetResearchPapers();
+            // RelatedPapers = _relatedPaperService.GetRelatedPapers();
+            // EngravingWork = _engravingService.GetEngravingWork();
         }
     }
 }

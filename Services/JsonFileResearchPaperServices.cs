@@ -11,22 +11,17 @@ namespace PeterKeenan.Services
     {
         public JsonFileResearchPaperServices(IWebHostEnvironment webHostEnvironment) => WebHostEnvironment = webHostEnvironment;
 
-        public IWebHostEnvironment WebHostEnvironment { get; }
+        private IWebHostEnvironment WebHostEnvironment { get; }
 
-        private string JsonFileName
-        {
-            get { return Path.Combine(WebHostEnvironment.WebRootPath, "data", "researchPapers.json"); }
-        }
+        private string JsonFileName => Path.Combine(WebHostEnvironment.WebRootPath, "data", "researchPapers.json");
 
         public IEnumerable<ResearchPapers> GetResearchPapers()
         {
-            using(var jsonFileReader = File.OpenText(JsonFileName))
+            using var jsonFileReader = File.OpenText(JsonFileName);
+            return JsonSerializer.Deserialize<ResearchPapers[]>(jsonFileReader.ReadToEnd(), new JsonSerializerOptions
             {
-                return JsonSerializer.Deserialize<ResearchPapers[]>(jsonFileReader.ReadToEnd(), new JsonSerializerOptions
-                {
-                    PropertyNameCaseInsensitive = true
-                });
-            }
+                PropertyNameCaseInsensitive = true
+            });
         }
     }
 }
