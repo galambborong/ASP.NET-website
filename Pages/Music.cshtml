@@ -55,5 +55,9 @@
 <!-- Section 3: Music Engraving -->
 <div class="container 3engraving">
     <h2 class="display-6">Music Engraving</h2>
-    <p></p>
+@foreach (var work in Model.EngravingWork)
+{
+    <h6>@work.WorkTitle by @work.Composer</h6>
+}
+
 </div>

@@ -16,15 +16,29 @@ namespace PeterKeenan.Pages
         public JsonFileResearchPaperServices ResearchPaperServices;
         public IEnumerable<ResearchPapers> ResearchPapers { get; private set; }
 
-        public MusicModel(ILogger<MusicModel> logger, JsonFileResearchPaperServices researchService)
+        public JsonFileRelatedPaperService RelatedPaperService;
+        public IEnumerable<RelatedPapers> RelatedPapers { get; private set; }
+
+        public JsonFileEngravingService EngravingService { get; private set; }
+        public IEnumerable<EngravingWork> EngravingWork { get; private set; }
+
+        public MusicModel(
+            ILogger<MusicModel> logger, JsonFileResearchPaperServices researchService,
+            JsonFileRelatedPaperService relatedPaperService,
+            JsonFileEngravingService engravingService
+        )
         {
             _logger = logger;
             ResearchPaperServices = researchService;
+            RelatedPaperService = relatedPaperService;
+            EngravingService = engravingService;
         }
 
         public void OnGet()
         {
             ResearchPapers = ResearchPaperServices.GetResearchPapers();
+            RelatedPapers = RelatedPaperService.GetRelatedPapers();
+            EngravingWork = EngravingService.GetEngravingWork();
         }
     }
 }

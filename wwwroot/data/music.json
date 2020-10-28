@@ -2,7 +2,10 @@
   "researchPapers": [
     {
       "articleName": "Towards an understanding of Mozart's use of tempo and proportion: Temporal strategies in the finales of <i>Le nozze di Figaro</i>",
-      "descriptions": ["MMus(R) thesis", "c25,000 words"],
+      "descriptions": [
+        "MMus(R) thesis",
+        "c25,000 words"
+      ],
       "for": "University of Glasgow",
       "year": 2017,
       "link1_url": "http://theses.gla.ac.uk/8776/",
@@ -12,7 +15,10 @@
     },
     {
       "articleName": "Wolfgang Amadeus Mozart (1756–1791), ed. Clemens Kemme MISSA IN c K427",
-      "descriptions": ["Edition review", "<i>Note: This article requires institutional access or paid access</i>"],
+      "descriptions": [
+        "Edition review",
+        "<i>Note: This article requires institutional access or paid access</i>"
+      ],
       "for": "Eighteenth-Century Music (17/2)",
       "year": 2020,
       "link1_url": "https://doi.org/10.1017/S1478570620000135",
