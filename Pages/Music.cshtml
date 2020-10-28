@@ -41,22 +41,23 @@
 </div>
 
 <!-- Section 2: Research -->
-<div class="container 2research">
-    <h2 class="display-6">Research</h2>
+@* <div class="container 2research"> *@
+@*     <h2 class="display-6">Research</h2> *@
+@* *@
+@*     @foreach (var paper in Model.ResearchPapers) *@
+@*     { *@
+@*         <h4>@paper.ArticleName</h4> *@
+@*     } *@
+@* </div> *@
 
-    @foreach (var paper in Model.ResearchPapers)
+<div class="container 2related">
+    <h2 class="display-6">Related</h2>
+    @foreach (var paper in Model.RelatedPapers)
     {
         <h4>@paper.ArticleName</h4>
     }
 </div>
-@* <div class="container 2related"> *@
-@*     <h2 class="display-6">Related</h2> *@
-@*     @foreach (var paper in Model.RelatedPapers) *@
-@*     { *@
-@*         <h4>@paper.ArticleName</h4> *@
-@*     } *@
-@*      *@
-@* </div> *@
+
 @* *@
 @* <!-- Section 3: Music Engraving --> *@
 @* <div class="container 3engraving"> *@

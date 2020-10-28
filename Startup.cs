@@ -23,9 +23,8 @@ namespace PeterKeenan
     public void ConfigureServices(IServiceCollection services)
     {
       services.AddRazorPages();
-      services.AddTransient<JsonFileResearchPaperServices>();
-      services.AddTransient<JsonFileRelatedPaperService>();
-      services.AddTransient<JsonFileEngravingService>();
+//      services.AddTransient<JsonFileResearchPaperServices>();
+      services.AddTransient<JsonFileRelatedPapersService>();
     }
     // This method gets called by the runtime. Use this method toconfigurethe HTTP request pipeline.
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
