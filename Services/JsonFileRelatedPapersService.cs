@@ -15,7 +15,7 @@ namespace PeterKeenan.Services
 
         private IWebHostEnvironment WebHostEnvironment { get; }
 
-        private string RelatedJsonFileName => Path.Combine(WebHostEnvironment.WebRootPath, "data", "relatedPapers.json");
+        private string RelatedJsonFileName => Path.Combine(WebHostEnvironment.WebRootPath, "data", "researchPapers.json");
 
         public IEnumerable<RelatedPapers> GetRelatedPapers()
         {
