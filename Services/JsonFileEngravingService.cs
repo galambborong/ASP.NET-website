@@ -15,7 +15,7 @@ namespace PeterKeenan.Services
 
         private string JsonFileName
         {
-            get { return Path.Combine(WebHostEnvironment.WebRootPath, "data", "engraving.json"); }
+            get { return Path.Combine(WebHostEnvironment.WebRootPath, "data", "researchPapers.json"); } // There seems to be an issue with engraving.json
         }
 
         public IEnumerable<EngravingWork> GetEngravingWork()

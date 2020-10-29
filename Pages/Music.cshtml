@@ -1,4 +1,5 @@
 ﻿@page
+@using System.Security.Cryptography
 @model MusicModel
 @{
     ViewData["Title"] = "Music";
@@ -20,7 +21,7 @@
 
 <!-- Section 1: Performance -->
 <div class="container 1performance">
-    <h2 class="display-6">Performance</h1>
+    <h2 class="display-6">Performance</h2>
         <p>I've never formally trained as a conductor but instead try to take/make every opportunity to broaden my
             experience. I have also benefitted greatly from sitting down with people I respect and chatting over a
             score.</p>
@@ -43,13 +44,18 @@
 <!-- Section 2: Research -->
 <div class="container 2research">
     <h2 class="display-6">Research</h2>
-
     @foreach (var paper in Model.ResearchPapers)
     {
         <h4>@paper.ArticleName</h4>
     }
+</div>
 
-
+<div class="container 2related">
+    <h2 class="display-6">Related papers</h2>
+    @foreach (var paper in Model.RelatedPapers)
+    {
+        <h4>@paper.For</h4>
+    }
 </div>
 
 <!-- Section 3: Music Engraving -->

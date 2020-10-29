@@ -15,7 +15,7 @@ namespace PeterKeenan.Services
 
         private string JsonFileName
         {
-            get { return Path.Combine(WebHostEnvironment.WebRootPath, "data", "relatedPapers.json"); }
+            get { return Path.Combine(WebHostEnvironment.WebRootPath, "data", "researchPapers.json"); } // There seems to be an issue with relatedPapers.json
         }
 
         public IEnumerable<RelatedPapers> GetRelatedPapers()
