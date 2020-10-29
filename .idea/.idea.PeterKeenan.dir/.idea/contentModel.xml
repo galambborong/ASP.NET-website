@@ -6,7 +6,6 @@
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p=".gitignore" t="Include" />
       <e p="Models" t="Include">
-        <e p="EngravingWork.cs" t="Include" />
         <e p="RelatedPapers.cs" t="Include" />
         <e p="ResearchPapers.cs" t="Include" />
       </e>
@@ -36,8 +35,7 @@
         <e p="launchSettings.json" t="Include" />
       </e>
       <e p="Services" t="Include">
-        <e p="JsonFileEngravingService.cs" t="Include" />
-        <e p="JsonFileRelatedPaperService.cs" t="Include" />
+        <e p="JsonFileRelatedPapersService.cs" t="Include" />
         <e p="JsonFileResearchPaperServices.cs" t="Include" />
       </e>
       <e p="Startup.cs" t="Include" />

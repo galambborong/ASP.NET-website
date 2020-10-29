@@ -264,3 +264,6 @@ _Pvt_Extensions
 **/.idea/**/*.iml
 **/.idea/**/contentModel.xml
 **/.idea/**/modules.xml
+
+.idea/.idea.PeterKeenan.dir/.idea/contentModel.xml
+.idea/.idea.PeterKeenan.dir/.idea/workspace.xml
