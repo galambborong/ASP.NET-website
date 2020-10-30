@@ -4,4 +4,37 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Blog\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Blog\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Blog\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Blog\**" />
+    <Content Remove="wwwroot\data\engraving.json" />
+    <Content Remove="wwwroot\data\relatedPapers.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Blog\Views\Account\Login.cshtml" />
+    <_ContentIncludedByDefault Remove="Blog\Views\Blog\Comments.cshtml" />
+    <_ContentIncludedByDefault Remove="Blog\Views\Blog\Edit.cshtml" />
+    <_ContentIncludedByDefault Remove="Blog\Views\Blog\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Blog\Views\Blog\Post.cshtml" />
+    <_ContentIncludedByDefault Remove="Blog\Views\Shared\_Layout.cshtml" />
+    <_ContentIncludedByDefault Remove="Blog\Views\Shared\_SocialSharing.cshtml" />
+    <_ContentIncludedByDefault Remove="Blog\Views\_ViewImports.cshtml" />
+    <_ContentIncludedByDefault Remove="Blog\Views\_ViewStart.cshtml" />
+    <_ContentIncludedByDefault Remove="Blog\web.config" />
+    <_ContentIncludedByDefault Remove="Blog\appsettings.Development.json" />
+    <_ContentIncludedByDefault Remove="Blog\appsettings.json" />
+  </ItemGroup>
+
 </Project>

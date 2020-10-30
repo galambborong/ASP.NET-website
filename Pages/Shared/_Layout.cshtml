@@ -10,32 +10,34 @@
   <link rel="stylesheet" href="~/css/site.css" />
 </head>
 
+
+<!-- Body and Navigation bar -->
 <body>
-  <header>
-    <!-- Navigation bar -->
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-      <div class="container">
-        <a class="navbar-brand" asp-area="" asp-page="/Index">Peter Keenan</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-          <ul class="nav justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link text-dark" asp-area="" asp-page="/Blog">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" asp-area="" asp-page="/Music">Music</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" asp-area="" asp-page="/Code">Code</a>
-            </li>
-          </ul>
-        </div>
+<header>
+  <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+    <div class="container">
+      <a class="navbar-brand" asp-area="" asp-page="/Index">Peter Keenan</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="" asp-page="/Blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="" asp-page="/Music">Music</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="" asp-page="/Code">Code</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
+</header>
+
   <!-- Page content -->
   <div class="container">
     <main role="main" class="pb-3">
@@ -44,20 +46,18 @@
   </div>
 
   <!-- Footer -->
-  <footer class="border-top footer text-muted text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="mb-5 flex-center">
+  <footer class="m-lg-auto p-lg-auto border-top footer text-muted text-center">
+      @* <div class="row"> *@
+      @*   <div class="col-md-12"> *@
+      @*     <div class="mb-5 flex-center"> *@
             <a href="https://linuxrocks.online/@@keenan"><img src="lib/static/Logotype (Simple).svg" height="20"></a>
             <a href="https://github.com/galambborong"><img src="lib/static/GitHub-Mark-120px-plus.png" height="20"></a>
             <a href="https://www.linkedin.com/in/peter-keenan-bb951a46"><img src="lib/static/LI-In-Bug.png"
               height="20"></a>
-          </div>
-        </div>
-      </div>
+      @*     </div> *@
+      @*   </div> *@
+      @* </div> *@
       <p>&copy; 2020 Peter Keenan</p>
-    </div>
   </footer>
 
   <!-- JavaScript -->
@@ -67,5 +67,4 @@
 
   @RenderSection("Scripts", required: false)
 </body>
-
 </html>
