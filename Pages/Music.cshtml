@@ -7,20 +7,23 @@
 <!-- Header -->
 <h1 class="display-4">Music</h1>
 
-<!-- Aside / SubNav -->
-<div class="container">
-    <aside>
+<!-- SubNav -->
+<div class="sidebar">
+    <nav>
+    @* <aside class="subnav_menu"> *@
         <ul>
             <li>Performance</li>
             <li>Research</li>
             <li>Music Engraving</li>
         </ul>
-    </aside>
+    @* </aside> *@
+    </nav>
 </div>
 
 <!-- Section 1: Performance -->
-<div class="container 1performance">
-    <h2 class="display-6">Performance</h2>
+<section class="py-5" id="subSection1_performance">
+<div class="container">
+    <h2>Performance</h2>
     <p>
         I've never formally trained as a conductor but instead try to take/make every opportunity to broaden my
         experience. I have also benefitted greatly from sitting down with people I respect and chatting over a
@@ -50,15 +53,18 @@
         performed together. (We would have done two concerts by now!) I'm looking forward to getting back to it.
     </p>
 </div>
+</section>
 
 <!-- Section 2: Research -->
-<div class="container 2research">
-    <h2 class="display-6">Research</h2>
+<section class="py-5" id="subSection2_research">
+<div class="container">
+    <h2>Research</h2>
+    <h3>Papers</h3>
     <div class="card-columns">
         @foreach (var paper in Model.ResearchPapers)
         {
             <div class="card">
-                <div class="card-img">
+                <div class="card-img"> <!-- images to come later -->
                     <div class="card-body">
                         <h5 class="card-title">@Html.Raw(paper.ArticleName)</h5>
                         <h6 class="card-text">@paper.For, @paper.Year</h6>
@@ -68,7 +74,7 @@
         }
     </div>
 
-    <h2 class="display-6">Related papers</h2>
+    <h3>Related papers</h3>
     <div class="card-columns">
         @foreach (var paper in Model.RelatedPapers)
         {
@@ -83,10 +89,12 @@
         }
     </div>
 </div>
+</section>
 
 <!-- Section 3: Music Engraving -->
-<div class="container 3engraving">
-    <h2 class="display-6">Music Engraving</h2>
+<section class="py-5" id="subSection3_engraving">
+<div class="container">
+    <h2>Music engraving</h2>
     <div class="card-columns">
         @foreach (var work in Model.EngravingWork)
         {
@@ -101,3 +109,4 @@
         }
     </div>
 </div>
+</section>
