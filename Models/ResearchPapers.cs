@@ -14,3 +14,4 @@ namespace PeterKeenan.Models
         public override string ToString() => JsonSerializer.Serialize<ResearchPapers>(this);
     }
 }
+
