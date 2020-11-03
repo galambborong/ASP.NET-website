@@ -136,3 +136,8 @@ p {
 .subTitle {
   font-family: mononokiItalic;
 }
+
+code {
+  font-family: mononokiRegular;
+  color: green;
+}
