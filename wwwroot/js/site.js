@@ -1,6 +1,14 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿
+// Toggle languages section on Code page
 
+const button = document.getElementById("seeLan");
 
-
-// Write your Javascript code.
+button.addEventListener('click', function() {
+    const lan = document.getElementById('Section1_languages')
+    
+    if (lan.classList.contains('d-none')) {
+        lan.classList.remove('d-none');
+    } else {
+        lan.classList.add('d-none');
+    }
+});
