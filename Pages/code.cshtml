@@ -4,31 +4,45 @@
   ViewData["Title"] = "Code";
 }
 
-<h1 class="display-4">Code</h1>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container text-center">
+        <h1 class="display-3 mainTitle py-2">code</h1>
+      <h3 class="display-6 subTitle">software development</h3>
+      <hr class="py-3">
+          <p class="subTitle">
+            I began coding in April 2020. 
+            In January 2021 I start a full-time, intensive training course with 
+            <a href="https://northcoders.com/">Northcoders</a> as a full-stack developer.
+          </p>
+    </div>
+</div>
+
+
+<ul class="list-group list-group-horizontal justify-content-center my-5">
+  <li class="list-group-item" style="border: none"><img src="/lib/assets/858px-Tux-shaded.png" height="34" alt="Linux Tux Icon"></li>
+  <li class="list-group-item" style="border: none"><img src="/lib/assets/python.svg" alt="Python Icon" height="34"></li>
+  <li class="list-group-item" style="border: none"><img src="lib/assets/haskell.svg" alt="Haskell Icon" height="34"></li>
+</ul>
+
+<!-- <a href="https://iconscout.com/icons/python" target="_blank">Python Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia" target="_blank">Icon Mafia</a> 
+
+<a href="https://iconscout.com/icons/haskell" target="_blank">Haskell Icon</a> by <a href="https://iconscout.com/contributors/vorillaz">Vorillaz</a> on <a href="https://iconscout.com">Iconscout</a>
+-->
+
 
 <!-- SubNav -->
 <div class="sidebarCode">
-    <nav>
-    @* <aside class="subnav_menu"> *@
-        <ul class="list-unstyled">
-            <li><a id="seeLan" class="btn btn-default">Languages</a></li>
-            <li>Related tech</li>
-            <li>Linux</li>
+       <ul class="list-group-horizontal justify-content-center my-5">
+            <li id="seeLanguages" class="list-group-item" style="border: none">Languages</li>
+            <li id="seeRelated" class="list-group-item" style="border: none">Related tech</li>
+            <li id="seeLinux" class="list-group-item" style="border: none">Linux</li>
         </ul>
-    @* </aside> *@
-    </nav>
 </div>
 
 <!-- Section 1: Languages -->
 
 <section class="py-5">
   <div id="Section1_languages" class="container d-none">
-    <h2>Overview</h2>
-    <p>
-      I began coding in April 2020 and have rather taken a fancy to it.
-      In January 2021 I start a full-time, intensive training course with <a href="https://northcoders.com/">Northcoders</a> as a
-      full-stack developer.
-    </p>
     <h2>Languages</h2>
     <p>
       At the moment, I'm concentrating on <b>JavaScript</b> and <b>C#</b>.
@@ -40,8 +54,8 @@
 
 <!-- Section 2: Related tech -->
 
-<section id="subSection2_relatedTech">
-  <div class="container">
+<section id="Section2_relatedTech">
+  <div class="container d-none">
     <h2>Related technologies</h2>
     <p>I'm familiar with a host of complementary technologies <small>(Some more so than others, at this stage!)</small>:</p>
     <ul class="list-unstyled">
@@ -60,9 +74,9 @@
 
 <!-- Section 3: Linux -->
 
-<section id="subSection3_linux">
-  <div class="container">
-    <h2>Linux systems</h2>
+<section id="Section3_linux">
+  <div class="container d-none">
+    <h2>Linux <i class="fa fa-linux" aria-hidden="true"></i></h2>
     <p>
       I'm a longstanding GNU/Linux user, with an inclination towards Arch-based distributions.
       I also prefer to use a tiling window manager rather than more typical desktop environments.
