@@ -1,16 +1,14 @@
-# New website
+# Abandoned
 
-This project will supercede my current website (see [galambborong/peterkeenan.co.uk](https://github.com/galambborong/peterkeenan.co.uk)). 
+I started this project before learning that I had to build a portfolio website in pure HTML, CSS and JS (ie, no framework) as part of my precourse for a coding bootcamp. The function and content of the two sites was pretty much identical, so I've decided to abandon this project. 
+
+I'm leaving the repository in place both as I intend to do more ASP.NET and will likely want to refer to this and because I may end up finishing it at some point.
 
 ## Aims
 
-The aims are to:
+The aims were to:
 
 * Produce a clean, simple but fully responsive site
 * Learn some Bootstrap and CSS Grid
 * Gain some experience with ASP.NET and Razor
-* Learn some SQL and employ a database
-
-## Notes
-
-The big 'unknown' at this stage is what form the blog will take. I'm exploring possible blog engines within the ASP.NET ecosystem, but also toying with the possiblity of creating my own modest template for this. The main thing is that it should be consistent with the 'theme' of the main site, rather than an awkward addon.
+* Learn some SQL and deploy a database
